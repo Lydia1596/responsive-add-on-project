@@ -1,6 +1,69 @@
-h1 {
+.container {
   font-family: "Poppins", sans-serif;
+  max-width: 1400px;
+  margin: 0 auto;
 }
+
 footer {
-  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/038/original/London.jpg?1697551071");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 260px;
+  text-align: center;
+}
+header a {
+  background-color: white;
+  border-radius: 8px;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 3px;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header h1 {
+  font-size: 86px;
+  font-weight: 700;
+  line-height: 100px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+header h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+header h3 {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 16px;
+  }
 }
