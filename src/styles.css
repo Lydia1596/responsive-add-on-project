@@ -27,6 +27,10 @@
   width: 100%;
 }
 
+.filter-image {
+  filter: brightness(120%) contrast(90%) saturate(110%);
+}
+
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/229/original/London-footer-3.jpg?1697652872");
@@ -229,6 +233,10 @@ section {
 
 .tertiary-section {
   padding: 60px;
+}
+
+tr {
+  text-align: left;
 }
 
 @media (max-width: 900px) {
