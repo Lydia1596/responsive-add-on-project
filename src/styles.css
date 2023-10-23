@@ -34,7 +34,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--primary-color);
-  padding: 30px;
+  padding: 10px 30px;
 }
 
 footer a {
@@ -202,6 +202,10 @@ main p {
   padding: 0 20px;
 }
 
+.primary-section-image {
+  margin: 10px 20px;
+}
+
 ul {
   padding: 0;
 }
@@ -221,6 +225,10 @@ section {
 .tertiary-section h2,
 .tertiary-section h3 {
   text-align: center;
+}
+
+.tertiary-section {
+  padding: 60px;
 }
 
 @media (max-width: 900px) {
@@ -256,7 +264,7 @@ section {
     font-size: 16px;
   }
 
-  main img {
+  .image-responsive {
     display: none;
   }
 }
