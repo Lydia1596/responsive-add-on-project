@@ -12,10 +12,19 @@
   text-align: center;
 }
 
+.card-header.grid {
+  grid-gap: 0;
+}
+
 .container {
   font-family: "Poppins", sans-serif;
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.embed {
+  aspect-ratio: 1/1;
+  width: 100%;
 }
 
 footer {
@@ -146,7 +155,7 @@ main a {
 main img {
   display: block;
   height: auto;
-  max-width: 100%;
+  width: 100%;
 }
 
 main h2 {
@@ -215,8 +224,20 @@ section {
 }
 
 @media (max-width: 900px) {
+  .embed {
+    aspect-ratio: 16/9;
+  }
+
   footer .grid {
     display: none;
+  }
+
+  .grid-2-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3-equal-columns {
+    grid-template-columns: 1fr;
   }
 
   header {
@@ -233,14 +254,6 @@ section {
 
   header h3 {
     font-size: 16px;
-  }
-
-  .grid-2-columns {
-    grid-template-columns: 1fr;
-  }
-
-  .grid-3-equal-columns {
-    grid-template-columns: 1fr;
   }
 
   main img {
