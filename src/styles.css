@@ -1,3 +1,17 @@
+:root {
+  --primary-color: rgb(244, 237, 237);
+  --secondary-color: #272044;
+}
+
+.card {
+  background-color: var(--primary-color);
+  padding: 30px;
+}
+
+.card-btn {
+  text-align: center;
+}
+
 .container {
   font-family: "Poppins", sans-serif;
   max-width: 1400px;
@@ -10,12 +24,12 @@ footer {
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: var(--primary-color);
   padding: 30px;
 }
 
 footer a {
-  color: white;
+  color: var(--primary-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -55,24 +69,29 @@ footer p {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.grid-3-equal-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/038/original/London.jpg?1697551071");
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: var(--primary-color);
   padding: 260px;
   text-align: center;
 }
+
 header a {
-  background-color: white;
+  background-color: var(--primary-color);
   border-radius: 8px;
-  color: black;
+  color: var(--secondary-color);
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
   letter-spacing: 3px;
-  padding: 10px;
+  padding: 10px 20px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -103,18 +122,30 @@ li {
 }
 
 main {
-  background-color: rgb(244, 237, 237);
+  background-color: var(--primary-color);
   font-family: "Poppins", sans-serif;
-  color: #272044;
+  color: var(--secondary-color);
   height: auto;
   max-width: 1400px;
   margin: 0 auto;
 }
 
+main a {
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 3px;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 main img {
   display: block;
   height: auto;
-  margin: 20px;
   max-width: 100%;
 }
 
@@ -137,12 +168,29 @@ main h3 {
   text-transform: uppercase;
 }
 
+main h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0 20px;
+  text-align: justify;
+  text-transform: capitalize;
+}
+
+main h5 {
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0 20px;
+  text-align: justify;
+  text-transform: capitalize;
+}
+
 main p {
   font-size: 16px;
   font-weight: 400;
   opacity: 70%;
-  padding: 20px;
-  text-align: justify;
+  padding: 0 20px;
 }
 
 ul {
@@ -153,6 +201,17 @@ section {
   max-width: 1400px;
   margin: 0 auto;
   padding: 50px 0;
+}
+
+.secondary-section {
+  background-color: white;
+}
+
+.secondary-section h2,
+.secondary-section h3,
+.tertiary-section h2,
+.tertiary-section h3 {
+  text-align: center;
 }
 
 @media (max-width: 900px) {
@@ -177,6 +236,10 @@ section {
   }
 
   .grid-2-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3-equal-columns {
     grid-template-columns: 1fr;
   }
 
